@@ -52,19 +52,11 @@ jQuery(document).ready(function($){
 	}
 });
 //chart
-$(function(){
-      var $ppc = $('.progress-pie-chart'),
-        percent = parseInt($ppc.data('percent')),
-        deg = 360*percent/100;
-      if (percent > 50) {
-        $ppc.addClass('gt-50');
-      }
-      $('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
-      $('.ppc-percents span').html(percent+'%');
-    });
+
 
 //new
-var duration   = 500,
+/*
+var duration   = 3000,
     transition = 200;
 
 drawDonutChart(
@@ -136,3 +128,37 @@ function drawDonutChart(element, percent, width, height, text_y) {
 function calcPercent(percent) {
   return [percent, 100-percent];
 };
+*/
+// Returns true if the specified element has been scrolled into the viewport.
+function isElementInViewport(elem) {
+    var $elem = $(elem);
+
+    // Get the scroll position of the page.
+    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+    var viewportTop = $(scrollElem).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    // Get the position of the element on the page.
+    var elemTop = Math.round( $elem.offset().top );
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+}
+
+// Check if it's time to start the animation.
+function checkAnimation() {
+    var $elem = $('.bar .level');
+
+    // If the animation has already been started
+    if ($elem.hasClass('start')) return;
+
+    if (isElementInViewport($elem)) {
+        // Start the animation
+        $elem.addClass('start');
+    }
+}
+
+// Capture scroll events
+$(window).scroll(function(){
+    checkAnimation();
+});

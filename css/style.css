@@ -95,7 +95,7 @@ Main components
   text-transform: uppercase;
   font-size: 20px;
   font-size: 1.25rem;
-  margin-top: -10%;
+  margin-top: -15%;
 }
 .logo {
   position: absolute;
@@ -103,7 +103,7 @@ Main components
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
-  font-size: 100px;
+  font-size: 5em;
   font-style: italic;
   font-weight: bolder;
   color: white;
@@ -114,14 +114,13 @@ Main components
 }
 #text {
   color: black;
-  font-size: 20px;
-  margin-top: 55px;
+  font-size: 1em;
+  margin-top: 3.5%;
   font-weight: bolder;
-  padding: 0;
+  padding: 1%;
 }
 #section1 {
   background: url(background.jpg) no-repeat center center fixed;
-  background-color: red;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -237,7 +236,7 @@ background-size: cover;
   transform-origin: 50% 50%;
 }
 .no-touch #cd-vertical-nav .cd-label {
-  position: relative;
+  position: absolute;
   margin-right: 10px;
   padding: .4em .5em;
   color: #C9C9C9;
@@ -395,6 +394,7 @@ text {
   top: 50%;
 
 }
+/*
 @media only screen and (max-width: 768px) {
   #donut {
     visibility: hidden;
@@ -429,4 +429,51 @@ path.color1 {
   margin-top: -15%;
   margin-bottom: -15%;
   padding-top: 15%;
+}*/
+
+.level {
+	height:20px;
+	background:#C9C9C9;
+    width:80%;
+    left: 50%;
+    top: 50%;
+    padding-left: 5%;
+}
+.bar {
+  background-color:#C9C9C9;
+  position: absolute;
+  clear: both;
+  width: 40%;
+  left: 30%;
+  top:80%;
+}
+.eighty.start {
+
+	width: 0px;
+	background: #ED2112;
+	-webkit-animation: eighty 3s ease-out forwards;
+	   -moz-animation: eighty 3s ease-out forwards;
+	    -ms-animation: eighty 3s ease-out forwards;
+	     -o-animation: eighty 3s ease-out forwards;
+	        animation: eighty 3s ease-out forwards;
+}
+
+@-moz-keyframes eighty {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@-webkit-keyframes eighty {
+	0% {
+	    width: 0px;
+	}
+
+	100% {
+	    width: 80%;
+	}
 }
