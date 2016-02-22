@@ -115,9 +115,9 @@ Main components
 #text {
   color: black;
   font-size: 1em;
-  margin-top: 3.5%;
+  margin-top: 3%;
   font-weight: bolder;
-  padding: 1%;
+  padding: 2%;
 }
 #section1 {
   background: url(background.jpg) no-repeat center center fixed;
@@ -236,7 +236,7 @@ background-size: cover;
   transform-origin: 50% 50%;
 }
 .no-touch #cd-vertical-nav .cd-label {
-  position: absolute;
+  position: relative;
   margin-right: 10px;
   padding: .4em .5em;
   color: #C9C9C9;
@@ -432,12 +432,13 @@ path.color1 {
 }*/
 
 .level {
-	height:20px;
+	height:50px;
 	background:#C9C9C9;
     width:80%;
     left: 50%;
     top: 50%;
-    padding-left: 5%;
+    padding-left: 25px;
+    padding-top: 15px;
 }
 .bar {
   background-color:#C9C9C9;
@@ -445,7 +446,7 @@ path.color1 {
   clear: both;
   width: 40%;
   left: 30%;
-  top:80%;
+  top:65%;
 }
 .eighty.start {
 
