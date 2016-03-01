@@ -434,7 +434,7 @@ path.color1 {
 .level {
 	height:50px;
 	background:#C9C9C9;
-    width:80%;
+    width:100%;
     left: 50%;
     top: 50%;
     padding-left: 25px;
@@ -444,8 +444,8 @@ path.color1 {
   background-color:#C9C9C9;
   position: absolute;
   clear: both;
-  width: 40%;
-  left: 30%;
+  width: 30%;
+  left: 35%;
   top:65%;
 }
 .eighty.start {
@@ -465,7 +465,7 @@ path.color1 {
     }
 
     100% {
-        width: 80%;
+        width: 60%;
     }
 }
 
@@ -475,6 +475,6 @@ path.color1 {
 	}
 
 	100% {
-	    width: 80%;
+	    width: 60%;
 	}
 }
