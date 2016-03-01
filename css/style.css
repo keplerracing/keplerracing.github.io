@@ -478,3 +478,19 @@ path.color1 {
 	    width: 60%;
 	}
 }
+a.darken {
+
+}
+
+a.darken img {
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;
+
+}
